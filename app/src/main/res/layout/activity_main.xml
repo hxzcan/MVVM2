@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hx.mvvm.ui.activity.LoginActivity">
+
+    <com.ican.shapetv.CommonShapeBtn
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="5dp"
+        android:text="文本样式+填充颜色+圆角"
+        android:textColor="#fff"
+        app:csb_color="@android:color/holo_orange_dark"
+        app:csb_corner_radius="45dp"
+        app:csb_press_color="@android:color/darker_gray"
+        app:csb_shapeMod="rectangle" />
+
+    <com.ican.shapetv.CommonShapeBtn
+        style="@style/commonShapeBtnStyle"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="5dp"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:padding="0dp"
+        android:text="按钮样式+填充颜色+圆角"
+        android:textColor="#fff"
+        app:csb_color="@android:color/holo_orange_dark"
+        app:csb_corner_radius="45dp"
+        app:csb_press_color="@android:color/darker_gray"
+        app:csb_shapeMod="rectangle" />
+
+    <com.ican.shapetv.CommonShapeBtn
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="5dp"
+        android:text="文本样式+渐变+水波纹+圆角"
+        android:textColor="#fff"
+        app:csb_corner_radius="45dp"
+        app:csb_end_color="@android:color/holo_orange_light"
+        app:csb_special_effect="true"
+        app:csb_start_color="@android:color/holo_orange_dark"
+        app:gradual_change="top_bottom" />
+
+    <com.ican.shapetv.CommonShapeBtn
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="#fff"
+        app:csb_color="@android:color/holo_orange_dark"
+        app:csb_shapeMod="oval"
+        app:csb_stroke_color="@android:color/holo_orange_dark"
+        app:csb_stroke_width="1dp" />
+
+    <com.ican.shapetv.CommonShapeBtn
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="5dp"
+        android:text="带有图片居中"
+        android:textColor="#fff"
+        app:csb_color="@android:color/holo_orange_dark"
+        app:csb_shapeMod="rectangle"
+        app:csb_drawable_position="right"
+        app:csb_stroke_width="1dp"
+        android:drawableRight="@mipmap/ic_changebtn_change"
+        />
+    <com.ican.shapetv.CommonShapeBtn
+        android:layout_width="90dp"
+        android:layout_height="200dp"
+        android:layout_margin="5dp"
+        android:text="带有图片居中"
+        android:textColor="#fff"
+        app:csb_color="@android:color/holo_orange_dark"
+        app:csb_shapeMod="rectangle"
+        app:csb_stroke_width="1dp"
+        app:csb_drawable_position="top"
+        android:drawableTop="@mipmap/ic_changebtn_change"
+        app:csb_corner_radius="15dp"
+        app:csb_corner_position="topLeft|topRight"
+        />
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="commonShapeBtn">
+        <attr name="csb_shapeMod" format="enum">
+            <enum name="rectangle" value="1"/> <!--矩形-->
+            <enum name="oval" value="2"/> <!--椭圆-->
+            <enum name="line" value="3"/> <!--线-->
+            <enum name="round" value="4"/> <!--圆形-->
+        </attr>
+        <attr name="csb_color" format="color"/> <!--整个按钮的颜色-->
+        <attr name="csb_press_color" format="color"/> <!--按下时颜色-->
+        <attr name="csb_stroke_color" format="color"/> <!--边框颜色-->
+        <attr name="csb_stroke_width" format="dimension"/><!--边框的宽度-->
+        <attr name="csb_corner_radius" format="dimension"/><!--圆角的大小-->
+        <attr name="csb_corner_position">     <!--圆角位置--><!--flag代表可以用多个值-->
+            <flag name="topLeft" value="1" />
+            <flag name="topRight" value="2" />
+            <flag name="bottomRight" value="4" />
+            <flag name="bottomLeft" value="8" />
+        </attr>
+
+        <attr name="csb_special_effect" format="boolean"/><!--是否开启特效-->
+        <attr name="csb_drawable_position" format="enum"><!--图片位置-->
+            <enum name="left" value="0"/>
+            <enum name="top" value="1"/>
+            <enum name="right" value="2"/>
+            <enum name="bottom" value="3"/>
+        </attr>
+        <attr name="csb_start_color" format="color"/> <!--开始的颜色-->
+        <attr name="csb_end_color" format="color"/> <!--结束的颜色-->
+        <attr name="gradual_change" format="enum"> <!--渐变从哪到哪-->
+            <enum name="top_bottom" value="0"/> <!--上下-->
+            <enum name="left_right" value="1"/> <!--左右-->
+            <enum name="all" value="2"/> <!--上下左右-->
+        </attr>
+    </declare-styleable>
+</resources>
